@@ -1,0 +1,29 @@
+{
+  "name": "vcv-js-scripts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/cli": "^7.6.0",
+    "@babel/core": "^7.6.0",
+    "@babel/preset-env": "^7.6.0"
+  },
+  "scripts": {
+    "build": "babel src -d lib",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stephanepericat/vcv-js-scripts.git"
+  },
+  "author": "Stephane P. Pericat <contact@pericat.net>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stephanepericat/vcv-js-scripts/issues"
+  },
+  "homepage": "https://github.com/stephanepericat/vcv-js-scripts#readme"
+}
