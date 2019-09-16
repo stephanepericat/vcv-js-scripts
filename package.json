@@ -1,7 +1,7 @@
 {
   "name": "vcv-js-scripts",
   "version": "1.0.0",
-  "description": "",
+  "description": "A collection of JS scripts for VCV Prototype",
   "main": "index.js",
   "directories": {
     "lib": "lib"

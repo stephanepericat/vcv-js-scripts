@@ -1,13 +1,15 @@
 let phase = 0;
 
 const process = block => {
-  for (let i = 0; i < block.bufferSize; i++) {
-    phase += block.sampleTime  * 20;
+  const { bufferSize, knobs, outputs, sampleTime } = block;
+  const freq = 261.6256 * knobs[0];
 
-    if(phase > 1) {
-      phase -= 1;
-    }
+  for (let i = 0; i < bufferSize; i++) {
+    phase += sampleTime * freq;
+    phase %= 1;
 
-    block.outputs[0][i] = phase * 5;
+    outputs[0][i] = phase * 10 - 5;
   }
-}
+
+  display("Frequency: " + freq.toFixed(2));
+};
