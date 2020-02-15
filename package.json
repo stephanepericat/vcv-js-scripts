@@ -6,14 +6,16 @@
   "directories": {
     "lib": "lib"
   },
-  "dependencies": {},
+  "dependencies": {
+    "rimraf": "^3.0.2"
+  },
   "devDependencies": {
-    "@babel/cli": "^7.6.0",
-    "@babel/core": "^7.6.0",
-    "@babel/preset-env": "^7.6.0"
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.4",
+    "@babel/preset-env": "^7.8.4"
   },
   "scripts": {
-    "build": "babel src -d lib",
+    "build": "rimraf lib && babel src -d lib",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
